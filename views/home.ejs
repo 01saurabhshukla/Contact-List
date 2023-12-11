@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link 
+    rel="stylesheet" 
+    href="/css/home.css" 
+    />
+  </head>
+
+<!-- ------------------------------------------------------------- -->
+
+  <body class="contact-list" style="align-content: center">
+
+<!-- ------------------------------------------------------------- -->
+
+    <h1 id="page-heading" 
+    style="display: inline-block; 
+    padding: 10px; 
+    background-color: cornflowerblue;">
+      <img
+        src="/images/contacts.png"
+        alt=""
+        style="max-width: 10%; 
+        height: auto; 
+        vertical-align: middle;"
+      />
+      My Contact List
+    </h1>
+
+<!-- --------------------------------------------------------------- -->
+
+    <div class="contact-list-container">
+      <ul class="">
+        <% for(let i of contact_List) { %>
+        <li class="contact">
+          <div class="details">
+            <p class=""><%= i.name %></p>
+            <p class=""><%= i.phoneNo %></p>
+          </div>
+          <div class="delete-button">
+            <a href="/delete-contact/?id=<%= i._id %>">
+              <img
+                src="/images/cancel.png"
+                alt=""
+                style="max-width: 12%; 
+                margin-top: 30px;
+                height: auto; vertical-align: middle"
+              />
+            </a>
+          </div>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+
+
+<!-- ---------------------------------------------------------------- -->
+
+
+    <form class="new-contact-form" action="/create-contact" method="post">
+      <input
+        class="contact-name"
+        type="text"
+        name="name"
+        placeholder="Enter Name"
+        required
+      />
+      <input
+        class="contact-phone-number"
+        type="text"
+        name="phoneNo"
+        placeholder="Enter Phone No"
+        required
+      />
+
+      <button type="submit">Add Contact</button>
+    </form>
+
+<!-- ------------------------------------------------------------------ -->
+
+    <script type="text/javascript" src="/js/home.js"></script>
+  </body>
+
+<!-- ------------------------------------------------------------------ -->
+
+</html>

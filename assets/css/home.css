@@ -1,0 +1,84 @@
+.contact {
+  display: flex;
+  text-align: center;
+}
+
+.contact .details {
+  display: flex;
+  margin-right: 25px;
+  /* background-color: cornflowerblue; */
+  border-radius: 1px;
+  padding: 10px;
+}
+
+.contact .details p {
+  margin-bottom: 5px;
+  padding: 20px;
+  padding-inline: 30px;
+}
+
+
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.contact-list h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-phone-number {
+  font-size: 16px;
+  color: #666;
+}
+
+.add-button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  align-content: center;
+}

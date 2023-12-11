@@ -1,0 +1,39 @@
+Ep 35 
+form life cycle 
+form filled->submit->action->here the handle function is called->redirected response.
+
+name property should be same like json key else there will be a blunder
+
+
+ep 37
+
+middle wares
+
+ep38 
+middle wares
+app.use it is a function in order req and res and analyse and process data for preprocessing it is needed
+if you dont call next in middle ware it will make website stuck it wont pass control to anyone
+
+ep42
+
+querery param
+/delete-contact/10 --> string param
+/delete-contact/?phone= --> querry param we can chain this querry parrams
+
+our urlencoded only encode our form data not a param data   
+
+ep 43 
+when you pass string param on static page it only changes one time 
+next you need to rerender complete page
+
+ep49 
+collection
+document
+fields
+collection of documents
+ODM - mongoose is a odm
+
+ORM - SQL
+
+ep52 
+schema
